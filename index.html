@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Winter</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         .home-icon {
             cursor: pointer; 
@@ -19,7 +19,28 @@
         td {
             border: 1px solid gray;
         }
-        
+        a{
+            color: navy; /* Цвет текста */
+            text-decoration: none; /* Убираем подчеркивание */
+            font-size: 16px; /* Размер шрифта */
+            font-family: Arial, sans-serif; /* Шрифт */
+        }
+        ul {
+            list-style-type: square; /* Стиль маркеров */
+            padding-left: 20px; /* Отступ слева */
+        }
+        ol {
+            padding-left: 20px;
+
+        }
+        li::before {
+            content: counter(item) ". "; /* Добавляем номер перед элементом */
+            font-family: 'Courier New', Courier, monospace; /* Шрифт для номера */
+            font-size: 20px; /* Размер шрифта для номера */
+            color: navy; /* Цвет номера */
+            position: absolute; /* Позиционирование номера */
+            left: -30px; /* Сдвиг номера влево */
+        }
     .snowflake {
     position: absolute;
     top: -10%;
@@ -84,8 +105,8 @@
 <body>
     <div class="container" alt="Фон главной страницы">
     <a href="index.html"> 
-    <img src="./img/i.webp" alt="Иконка главной страницы" class="home-icon"></a>
-    <h1>Зима</h1>
+    <img src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\i.webp" alt="Иконка главной страницы" class="home-icon"></a>
+    <h1><font color="navy" size="5" face="Arial">Зима</font></h1>
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div>
@@ -98,43 +119,52 @@
     <div class="snowflake">❄️</div>
 
         <p><font color="navy" size="3" face="Arial">Зима — одно из четырёх времён года между осенью и весной.</font></p>
-        <p><font color="navy" size="3" face="Arial">Основной признак этого времени года — устойчивая низкая температура (ниже 0 градусов по Цельсию) во многих районах Земли, на поверхность земли выпадает и ложится снег. Смена времён года обусловлена наклоном оси вращения Земли к плоскости эклиптики.</font></p>
+        <p><font color="navy" size="3" face="Arial">Основной признак этого времени года — устойчивая низкая температура (ниже 0 градусов по Цельсию) 
+        во многих районах Земли, на поверхность земли выпадает и ложится снег. Смена времён года обусловлена наклоном оси вращения Земли к плоскости эклиптики.
+        Народный календарь, беря за основу явления природы, определяет начало зимы с появления заморозков, а окончание — по началу таяния снега. По фенологическим сезонам года зима включает около 111 дней (с 17 ноября по 7 марта) и делится на три подсезона:</font></p>
+        <ol>
+            <li><font color="navy" size="3" face="Arial">Первозимье («предзимье») — 35 дней (с 17 ноября — 22 декабря).</font></li>
+            <li><font color="navy" size="3" face="Arial">Коренная зима («глухозимье») — 55 дней (с 22 декабря — 15 февраля).</font></li>
+            <li><font color="navy" size="3" face="Arial">Перелом зимы («предвесенье») — 21 день (с 15 февраля — 7 марта).</font></li>
+        </ol>
         <div align="center">
             <i><p><font color="blue" size="5" face="Arial">Зима - очень красивое время года!</font></p></i>
-            <img src="./img/3c02fc14741dab1c4b57937480633cab.jpg" width="600" height="400" alt="Зима">
+            <img src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\3c02fc14741dab1c4b57937480633cab.jpg" width="600" height="400" alt="Зима">
         </div>
         <table>
             <tr>
                 <td>
-                    <font color="yellow">Зимой воздух особенно сухой</font>
+                    <font color="navy">Зимой воздух особенно сухой</font>
                 </td>
                 <td>
-                    <font color="yellow">Световой день зимой намного короче</font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <font color="yellow">Самая низкая температура на Земле была зафиксирована зимой</font>
-                </td>
-                <td>
-                    <font color="yellow">Северное сияние чаще всего видно в зимние месяцы</font>
+                    <font color="navy">Световой день зимой намного короче</font>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <font color="yellow">Замерзшие водоёмы не промерзают до дна</font>
+                    <font color="navy">Самая низкая температура на Земле была зафиксирована зимой</font>
                 </td>
                 <td>
-                    <font color="yellow">Каждая снежинка уникальна по своей форме</font>
-                    <img src="./img/2592c454fe98dbb007e32a0c068cf1b9.jpg" height="100" alt="Снежинка">
+                    <font color="navy">Северное сияние чаще всего видно в зимние месяцы</font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="navy">Замерзшие водоёмы не промерзают до дна</font>
+                </td>
+                <td>
+                    <font color="navy">Каждая снежинка уникальна по своей форме</font>
+                    <img src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\2592c454fe98dbb007e32a0c068cf1b9.jpg" height="100" alt="Снежинка">
                 </td>
             </tr>
         </table>
         <p><font color="navy" size="3" face="Arial">Картинки зимы:</font></p>
-        <p><a href="./img/1.jpg"><font color="navy" size="3" face="Arial">Пурпурный закат</font></a></p>
-        <p><a href="./img/9f26bd6700811.56027e89de749.jpg"><font color="navy" size="3" face="Arial">Среди деревьев</font></a></p>
-        <p><a href="./img/1610.jpg"><font color="navy" size="3" face="Arial">Серость</font></a></p>
-        <p><a href="./img/i.jfif"><font color="navy" size="3" face="Arial">Город</font></a></p>
+        <ul>
+            <li><a href="1.jpg">Пурпурный закат</a></li>
+            <li><a href="9f26bd6700811.56027e89de749.jpg">Среди деревьев</a></li>
+            <li><a href="1610.jpg">Серость</a></li>
+            <li><a href="i.jfif">Город</a></li>
+        </ul>
         <div align="center">
             <a href="1.html">Новый год</a>
             <a href="2.html">Зимние Олимпийские игры</a>
@@ -144,4 +174,6 @@
     </div>
     </body>
  </html>
+
+
 
