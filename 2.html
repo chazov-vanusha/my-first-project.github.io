@@ -20,6 +20,12 @@
             font-size: 16px; /* Размер шрифта */
             font-family: Arial, sans-serif; /* Шрифт */
         }
+        .date-container {
+            font-size: 24px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: navy;
+        }
         .snowflake {
     position: absolute;
     top: -10%;
@@ -81,12 +87,16 @@
 .image-margin {
     margin-top: 20px;
 }
+video {
+    width: 300px;
+    height: auto;
+}
     </style>
     </head>
     <body>
         <div class="container" alt="Фон страницы">
         <a href="index.html"> 
-        <img src="./img/i.webp" alt="Иконка главной страницы" class="home-icon"> 
+        <img src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\i.webp" alt="Иконка главной страницы" class="home-icon"> 
     </a>
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div>
@@ -98,15 +108,28 @@
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div>
-        <h1><font color="navy" size="5" face="Arial">Зимние Олимпийские игры</font></h1>
+    <div class="date-container" id="currentDate">
+        <script>
+            const now=new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = now.toLocaleDateString('ru-RU', options);
+            document.getElementById("currentDate").innerText = formattedDate;
+        </script>
+    </div>
+        <h1><font color="navy" size="40px" face="Times New Roman">Зимние Олимпийские игры</font></h1>
         <div align="center">
-            <p><font color="navy" size="5" face="Arial">Зимние Олимпийские игры - спортивное мероприятие, проводящееся один раз в четыре года</font></p>
-            <img src="./img/1dcd5f22e5d008b7bcd7eee9f0c4f838.png" width="700" height="400" style="margin-right: 50px;" class="image-margin" alt="Символ Олимпийских игр">
+            <p class="winter-text">Зимние Олимпийские игры - спортивное мероприятие, проводящееся один раз в четыре года</p>
+            <video autoplay loop muted>
+                <source src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\video_2025-12-20_16-58-20.mp4">
+            </video>
+            <img src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\1dcd5f22e5d008b7bcd7eee9f0c4f838.png" width="700" height="400" style="margin-right: 1px;" class="image-margin" alt="Символ Олимпийских игр">
+            <video autoplay loop muted>
+                <source src="C:\Users\vanya\OneDrive\Рабочий стол\web-site\video_2025-12-20_16-58-26.mp4">
+            </video>
         </div>
-        <p><font color="navy" size="3" face="Arial">Таблица:</font></p>
-        <a href="./img/Без имени 1.ods">Зимние олимпийские виды спорта</a>
+        <p class="winter-text">Таблица:</p>
+        <a href="Без имени 1.ods"><font face="Times New Roman">Зимние олимпийские виды спорта</font></a>
         </div>
     </body>
  </html>
-
 
